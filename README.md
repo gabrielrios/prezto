@@ -29,7 +29,7 @@ version is 4.3.11.
      ```sh
      setopt EXTENDED_GLOB
      for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-       ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+       ln -fs "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
      done
      ```
 
