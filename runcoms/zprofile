@@ -82,7 +82,9 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="$HOME/.rbenv/shims:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/.bin:$PATH"
-export GOPATH="$HOME/gopath"
+export PATH="/usr/local/Cellar/node/7.2.1/bin:$PATH"
+export GOPATH="$HOME/code/go"
+export PATH="$GOPATH/bin:$PATH"
 
 
 export LC_ALL=$LANG
