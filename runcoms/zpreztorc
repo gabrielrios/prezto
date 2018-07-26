@@ -127,6 +127,7 @@ zstyle ':prezto:module:history-substring-search' color 'yes'
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
 zstyle ':prezto:module:prompt' theme 'merv'
+<<<<<<< HEAD
 
 # Set the working directory prompt display length.
 # By default, it is set to 'short'. Set it to 'long' (without '~' expansion)
@@ -136,6 +137,8 @@ zstyle ':prezto:module:prompt' theme 'merv'
 # Set the prompt to display the return code along with an indicator for non-zero
 # return codes. This is not supported by all prompts.
 # zstyle ':prezto:module:prompt' show-return-val 'yes'
+=======
+>>>>>>> e6ed1f5dc4f9147cc85e71aef3b68997345e31cd
 
 #
 # Ruby
@@ -144,6 +147,7 @@ zstyle ':prezto:module:prompt' theme 'merv'
 # Auto switch the Ruby version on directory change.
 zstyle ':prezto:module:ruby:rbenv' auto-switch 'yes'
 zstyle ':prezto:module:ruby:info:version' format 'version:%v'
+<<<<<<< HEAD
 
 #
 # Python
@@ -154,6 +158,8 @@ zstyle ':prezto:module:ruby:info:version' format 'version:%v'
 
 # Automatically initialize virtualenvwrapper if pre-requisites are met.
 # zstyle ':prezto:module:python:virtualenv' initialize 'yes'
+=======
+>>>>>>> e6ed1f5dc4f9147cc85e71aef3b68997345e31cd
 
 #
 # Screen

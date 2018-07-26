@@ -22,7 +22,6 @@
     fortune -s
     print
   fi
-
 } >&2
 
 
