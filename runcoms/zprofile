@@ -17,8 +17,8 @@ fi
 # Editors
 #
 
-export EDITOR='vim'
-export VISUAL='vim'
+export EDITOR='nvim'
+export VISUAL='nvim'
 export PAGER='less'
 
 #
@@ -79,8 +79,6 @@ fi
 
 export PATH="/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/opt/X11/bin"
 export PATH="/usr/local/bin:$PATH"
-export PATH="$HOME/.rbenv/shims:$PATH"
-export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/.bin:$PATH"
 export PATH="/usr/local/Cellar/node/7.2.1/bin:$PATH"
 

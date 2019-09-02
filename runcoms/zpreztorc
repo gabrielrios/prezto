@@ -110,7 +110,7 @@ zstyle ':prezto:module:history-substring-search' color 'yes'
 #
 
 # Set the keyword used by `mand` to open man pages in Dash.app
-# zstyle ':prezto:module:osx:man' dash-keyword 'manpages'
+zstyle ':prezto:module:osx:man' dash-keyword 'manpages'
 
 #
 # Pacman
@@ -142,7 +142,7 @@ zstyle ':prezto:module:prompt' theme 'merv'
 #
 
 # Auto switch the Ruby version on directory change.
-zstyle ':prezto:module:ruby:rbenv' auto-switch 'yes'
+# zstyle ':prezto:module:ruby:rbenv' auto-switch 'yes'
 zstyle ':prezto:module:ruby:info:version' format 'version:%v'
 
 #
