@@ -23,3 +23,4 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 
 . /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
