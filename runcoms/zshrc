@@ -10,6 +10,9 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+autoload bashcompinit
+bashcompinit
+
 # Customize to your needs...
 
 if [[ -r ~/.aliasrc ]]; then
@@ -24,3 +27,4 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 . /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
