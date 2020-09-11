@@ -37,13 +37,15 @@ zstyle ':prezto:load' pmodule \
   'directory' \
   'spectrum' \
   'utility' \
-  'ssh' \
-  'homebrew' \
-  'ruby' \
   'completion' \
   'history-substring-search' \
   'contrib-prompt' \
-  'prompt'
+  'prompt' \
+  'ruby' \
+  'tmux'\
+  'ssh' \
+  'rails' \
+  'git'
 
 #
 # Autosuggestions
@@ -65,10 +67,15 @@ zstyle ':prezto:load' pmodule \
 #
 
 # Set the key mapping style to 'emacs' or 'vi'.
-zstyle ':prezto:module:editor' key-bindings 'emacs'
+zstyle ':prezto:module:editor' key-bindings 'vi'
 
 # Auto convert .... to ../..
-# zstyle ':prezto:module:editor' dot-expansion 'yes'
+zstyle ':prezto:module:editor' dot-expansion 'yes'
+zstyle ':prezto:module:editor:info:keymap:primary:insert' format 'I'
+zstyle ':prezto:module:editor:info:keymap:primary' format '>>>'
+zstyle ':prezto:module:editor:info:keymap:primary:overwrite' format 'O'
+zstyle ':prezto:module:editor:info:keymap:alternate' format '<<<'
+zstyle ':prezto:module:editor:info:completing' format '...'
 
 # Allow the zsh prompt context to be shown.
 #zstyle ':prezto:module:editor' ps-context 'yes'
@@ -78,7 +85,7 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 #
 
 # Ignore submodules when they are 'dirty', 'untracked', 'all', or 'none'.
-# zstyle ':prezto:module:git:status:ignore' submodules 'all'
+zstyle ':prezto:module:git:status:ignore' submodules 'all'
 
 #
 # GNU Utility
@@ -105,6 +112,8 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 #
 
 # Set the query found color.
+zstyle ':prezto:module:history-substring-search' case-sensitive 'yes'
+zstyle ':prezto:module:history-substring-search' color 'yes'
 # zstyle ':prezto:module:history-substring-search:color' found ''
 
 # Set the query not found color.
@@ -160,7 +169,7 @@ zstyle ':prezto:module:prompt' theme 'spaceship'
 #
 
 # Auto switch the Ruby version on directory change.
-zstyle ':prezto:module:ruby:chruby' auto-switch 'yes'
+# zstyle ':prezto:module:ruby:chruby' auto-switch 'yes'
 
 #
 # Screen
@@ -230,7 +239,7 @@ zstyle ':prezto:module:ssh:load' identities 'id_rsa'
 # zstyle ':prezto:module:tmux:auto-start' remote 'yes'
 
 # Integrate with iTerm2.
-# zstyle ':prezto:module:tmux:iterm' integrate 'yes'
+zstyle ':prezto:module:tmux:iterm' integrate 'yes'
 
 # Set the default session name:
 # zstyle ':prezto:module:tmux:session' name 'YOUR DEFAULT SESSION NAME'
