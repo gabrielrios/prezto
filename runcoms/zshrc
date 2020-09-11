@@ -12,7 +12,11 @@ fi
 
 # Customize to your needs...
 #
-export PATH=$HOME/.bin:$PATH
+#export PATH=$HOME/.bin:$PATH
+
+if [[ -r ~/.aliasrc ]]; then
+    source ~/.aliasrc
+fi
 
 BASE16_SHELL="$HOME/.config/base16-shell/"
 [ -n "$PS1" ] && \
