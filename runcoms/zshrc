@@ -40,9 +40,14 @@ export LIBGL_ALWAYS_INDIRECT=1
 export WSL_HOST=$(tail -1 /etc/resolv.conf | cut -d ' ' -f2)
 export DISPLAY=$WSL_HOST:0
 
+export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
+
 # disable -p '#'
 
 alias 'nvim'=/home/gabriel/.local/bin/nvim.appimage
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+source <(kind completion zsh)
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
