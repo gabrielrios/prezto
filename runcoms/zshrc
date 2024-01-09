@@ -45,6 +45,10 @@ export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
 # disable -p '#'
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source <(kind completion zsh)
+#source <(kind completion zsh)
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
